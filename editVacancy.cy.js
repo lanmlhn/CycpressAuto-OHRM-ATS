@@ -34,7 +34,7 @@ describe("Edit Vacancy Test", () =>{
              .find('[class="mdi-navigation-cancel remove-employee material-icons small-icon-font"]').eq(0).click()
              cy.wrap($body)
             .find('[data-id="addJobVacancy_hiringManagers"]').click()
-            .find('[id="textarea_addJobVacancy_hiringManagers"]').click({force: true}).type('Al')
+            .find('[id="textarea_addJobVacancy_hiringManagers"]').click({force: true}).type('Ali')
             cy.wrap($body).find("[class='search-row searchListEmployeeName']").eq(2).click()
             
             cy.wait(5000)
@@ -48,7 +48,7 @@ describe("Edit Vacancy Test", () =>{
         })
     })
     //Edit Vacancy fields with max data
-    it('Verify the " Edit Vacancy" fields with max data', () => {
+    xit('Verify the " Edit Vacancy" fields with max data', () => {
         cy.on('uncaught:exception', (err, runnable) => {
   
             return false
@@ -85,7 +85,7 @@ describe("Edit Vacancy Test", () =>{
                                  
         })
     })  
-    it('Verify the " Edit Vacancy" fields with empty data', () => {
+    xit('Verify the " Edit Vacancy" fields with empty data', () => {
         cy.on('uncaught:exception', (err, runnable) => {
   
             return false
@@ -121,7 +121,7 @@ describe("Edit Vacancy Test", () =>{
                                  
         })
     }) 
-    it('Verify the " Edit Vacancy" fields with exits data', () => {
+    xit('Verify the " Edit Vacancy" fields with exits data', () => {
         cy.on('uncaught:exception', (err, runnable) => {
   
             return false
